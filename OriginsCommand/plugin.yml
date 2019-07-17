@@ -11,3 +11,5 @@ commands:
     description: TP to Lobby
   towny:
     description: TP to Towny
+  store:
+    description: Shows Store Link

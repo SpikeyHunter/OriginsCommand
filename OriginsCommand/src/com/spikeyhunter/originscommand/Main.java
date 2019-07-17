@@ -30,6 +30,7 @@ public class Main extends JavaPlugin implements Listener {
     public boolean onCommand(CommandSender s, Command cmd, String label, String[] args) {
         Player p = (Player) s;
         String website = getConfig().getString("website");
+        String store = getConfig().getString("store");
         String discord = getConfig().getString("discord");
         String towny = getConfig().getString("towny");
         String lobby = getConfig().getString("lobby");
@@ -37,6 +38,9 @@ public class Main extends JavaPlugin implements Listener {
         if (cmd.getName().equalsIgnoreCase("website")) {
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6&lWebsite &8>> " + ChatColor.GREEN + website ));
                 }
+        else if (cmd.getName().equalsIgnoreCase("store")) {
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6&lStore &8>> " + ChatColor.GREEN + store ));
+        }
         else if (cmd.getName().equalsIgnoreCase("lobby")) {
             ByteArrayDataOutput out = ByteStreams.newDataOutput();
             out.writeUTF("Connect");
