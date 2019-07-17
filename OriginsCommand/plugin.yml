@@ -1,0 +1,13 @@
+name: OriginsCommand
+version: 1.0.0
+main: com.spikeyhunter.originscommand.Main
+description: Custom Commands
+commands:
+  discord:
+    description: Shows Discord Invite 
+  website:
+    description: Shows Website Link
+  lobby:
+    description: TP to Lobby
+  towny:
+    description: TP to Towny
